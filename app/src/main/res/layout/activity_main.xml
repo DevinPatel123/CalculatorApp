@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/red"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/findSum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
         android:onClick="findSum"
         android:text="Add"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,7 +28,8 @@
         android:layout_marginTop="104dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Num1"
+        android:text=""
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/findum"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.218"
@@ -42,7 +45,8 @@
         android:layout_marginTop="104dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Num2"
+        android:text=""
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.311"
@@ -55,6 +59,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="44dp"
+        android:background="@color/green"
+        android:colorr="@color/green"
         android:onClick="findMult"
         android:text="Multiply"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -70,6 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:layout_marginBottom="124dp"
+        android:backgroundTint="@color/green"
         android:onClick="findNeg"
         android:text="Subtract"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -84,13 +91,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="124dp"
+        android:backgroundTint="@color/green"
         android:onClick="finddiv"
         android:text="Divide"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.702"
         app:layout_constraintStart_toEndOf="@+id/button7"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/findMult" />
 
     <TextView
         android:id="@+id/resultTV"
@@ -98,12 +106,24 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="116dp"
         android:text="textView"
-        android:textColor="#D34C4C"
+        android:textColor="@color/white"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintBottom_toTopOf="@+id/findMult"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/num1ET" />
+        app:layout_constraintTop_toTopOf="@+id/num1ET"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THE CHRISTMAS CALCULATOR"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/num1ET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
