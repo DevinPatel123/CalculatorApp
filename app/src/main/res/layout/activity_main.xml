@@ -129,10 +129,14 @@
         android:id="@+id/imageView"
         android:layout_width="47dp"
         android:layout_height="32dp"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="432dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.034"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/num1ET"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/snow1" />
 
     <ImageView
@@ -144,7 +148,7 @@
         app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button8"
-        app:layout_constraintVertical_bias="0.508"
+        app:layout_constraintVertical_bias="0.737"
         app:srcCompat="@drawable/tree1" />
 
     <ImageView
@@ -153,22 +157,22 @@
         android:layout_height="47dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintHorizontal_bias="0.223"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button7"
-        app:layout_constraintVertical_bias="0.68"
+        app:layout_constraintVertical_bias="0.459"
         app:srcCompat="@drawable/snow1" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="50dp"
         android:layout_height="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/button8"
-        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/button8"
+        app:layout_constraintHorizontal_bias="0.913"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7"
-        app:layout_constraintVertical_bias="0.298"
+        app:layout_constraintTop_toBottomOf="@+id/resultTV"
+        app:layout_constraintVertical_bias="0.808"
         app:srcCompat="@drawable/snow1" />
 
     <ImageView
@@ -177,30 +181,57 @@
         android:layout_height="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintHorizontal_bias="0.607"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button7"
-        app:layout_constraintVertical_bias="0.344"
+        app:layout_constraintVertical_bias="0.401"
         app:srcCompat="@drawable/snow1" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="50dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="68dp"
+        android:layout_marginEnd="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.681"
+        app:layout_constraintVertical_bias="0.615"
         app:srcCompat="@drawable/snow1" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="61dp"
-        android:layout_height="48dp"
-        app:srcCompat="@drawable/snow1"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="605dp" />
+        android:layout_width="44dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        app:srcCompat="@drawable/snow1" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="44dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="192dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/snow1" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="44dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        app:srcCompat="@drawable/snow1" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -208,7 +239,22 @@
         android:layout_height="29dp"
         android:layout_marginBottom="188dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:srcCompat="@drawable/snow1"
-        tools:layout_editor_absoluteX="346dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/num2ET"
+        app:layout_constraintVertical_bias="0.917"
+        app:srcCompat="@drawable/snow1" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="61dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.797"
+        app:srcCompat="@drawable/snow1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
